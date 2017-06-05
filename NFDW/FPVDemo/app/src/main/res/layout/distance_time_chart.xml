@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dreamheart.autoscalinglayout.ASLinearLayout
+xmlns:custom="http://schemas.android.com/apk/res-auto"
+custom:designWidth="384dp"
+custom:designHeight="575dp"
+custom:autoScaleEnable="true"
+custom:autoScaleType="fitInside"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBlack">
+
+<me.dreamheart.autoscalinglayout.ASLinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="11"
+    custom:autoScaleEnable="true"
+    custom:autoScaleType="fitInside"
+
+    >
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.99"
+        android:orientation="vertical"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitInside"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="最短距离曲线图"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            >
+        </TextView>
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:id="@+id/distance_time_curve"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="15"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitWidth"
+        >
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitInside"
+        >
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitInside"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_dis"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="23dp"
+                    android:text="线：检测中... "
+                    />
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/textview_xs"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="23dp"
+                    android:text="线树最小距离：检测中..."/>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitInside"
+            >
+
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:text="状态：初始化中..."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="23dp"
+                    />
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/realtime_dis"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:text="线树距离：检测中..."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="23dp"/>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+</me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+<me.dreamheart.autoscalinglayout.ASLinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="right"
+    custom:autoScaleEnable="true"
+    custom:autoScaleType="fitHeigth"
+    android:gravity="center"
+    >
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/start"
+                android:background="@color/colorWhite"
+                android:id="@+id/toggle_on_off"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggle"
+                android:textOff="接收数据"
+                android:textOn="暂停接收"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:checked="false"
+
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/clear"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_clear"
+                android:text="清除曲线"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:background="#00000000"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/set"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置参数"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:background="#00000000"
+                android:id="@+id/button_Set"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/history"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="检测记录"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:background="#00000000"
+                android:id="@+id/button_History"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/save"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_Save"
+                android:background="#00000000"
+                android:textColor="@color/colorWhite"
+                android:text="保存数据"
+                android:textSize="18dp"
+                android:gravity="center"
+
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:src="@drawable/save"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_tail"
+                android:background="#00000000"
+                android:textColor="@color/colorWhite"
+                android:text="自动模式"
+                android:textSize="18dp"
+                android:gravity="center"
+
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+
+
+</me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+</me.dreamheart.autoscalinglayout.ASLinearLayout>
+

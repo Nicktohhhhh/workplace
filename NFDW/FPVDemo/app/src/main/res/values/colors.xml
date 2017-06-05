@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#091F5B</color>
+    <color name="colorGreen">#00FF66</color>
+    <color name="colorSilver">#C0C0C0</color>
+    <color name="colorGold">#E1D700</color>
+    <drawable name="white_dra">#ffffff</drawable>
+</resources>

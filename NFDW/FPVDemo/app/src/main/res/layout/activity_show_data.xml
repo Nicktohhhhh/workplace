@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dreamheart.autoscalinglayout.ASLinearLayout
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    custom:designWidth="384dp"
+    custom:designHeight="575dp"
+    custom:autoScaleEnable="true"
+    custom:autoScaleType="fitInside"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="11"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitInside"
+
+        >
+
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.99"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitInside"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text=""
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:id="@+id/text_dis_data"
+                >
+            </TextView>
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:id="@+id/distance_time_curve_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="14.02"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitWidth"
+            >
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.99"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitInside"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/shortest_dis_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="线树最短距离为："
+                android:textSize="30dp"
+                android:textAlignment="center"
+                >
+            </TextView>
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+</me.dreamheart.autoscalinglayout.ASLinearLayout>

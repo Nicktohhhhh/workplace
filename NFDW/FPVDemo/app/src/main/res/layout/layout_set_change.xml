@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dreamheart.autoscalinglayout.ASLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    custom:designWidth="384dp"
+    custom:designHeight="575dp"
+    custom:autoScaleEnable="true"
+    custom:autoScaleType="fitInside"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitInside">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:id="@+id/button_cancel"
+            android:text="返回"/>
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitInside">
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth"></me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="设置参数"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:id="@+id/textView3" />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitHeigth">
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            custom:autoScaleEnable="true"
+            android:orientation="horizontal"
+            custom:autoScaleType="fitInside">
+
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="40dp"
+                    android:gravity="center|end"
+                    android:text="线:"
+                    android:id="@+id/textView" />
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <me.dreamheart.autoscalinglayout.ASLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:gravity="end|center"
+                        android:text="X"/>
+
+                </me.dreamheart.autoscalinglayout.ASLinearLayout>
+                <me.dreamheart.autoscalinglayout.ASLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:gravity="end|center"
+                        android:text="Y"
+                        />
+
+                </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="当前参数"
+                    android:textSize="35dp"
+                    android:gravity="center"
+
+                    android:id="@+id/textView5"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/editText_x_u1"
+                    android:gravity="bottom|center"
+                    />
+
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_x_d1"/>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1000"
+                    android:hint="0~2000"
+                    android:textSize="25dp"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_x_u2" />
+
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_x_d2"
+                    android:text="1000"
+                    android:hint="0~2000"
+                    android:numeric="integer"
+                    android:textSize="25dp"
+                    android:gravity="bottom|center"
+                    />
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitHeigth"
+
+        >
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            custom:autoScaleEnable="true"
+            android:orientation="horizontal"
+            custom:autoScaleType="fitInside">
+
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="40dp"
+                    android:gravity="center|end"
+                    android:text="树:"
+                    android:id="@+id/textView2" />
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <me.dreamheart.autoscalinglayout.ASLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:gravity="end|center"
+                        android:text="旋转角度"
+                        android:id="@+id/textView4" />
+
+                </me.dreamheart.autoscalinglayout.ASLinearLayout>
+                <me.dreamheart.autoscalinglayout.ASLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:gravity="end|center"
+                        android:text="俯仰角度"
+                        />
+
+                </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:textSize="25dp"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_s_u1"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:textSize="25dp"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_s_d1"
+                    android:textColor="@color/colorAccent"/>
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:background="#00000000"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="0~180"
+                    android:text="90"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textSize="25dp"
+                    android:numeric="integer"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_s_u2"
+                    />
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+            <me.dreamheart.autoscalinglayout.ASLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0~180"
+                    android:text="90"
+                    android:textSize="25dp"
+                    android:numeric="integer"
+                    android:gravity="bottom|center"
+                    android:id="@+id/editText_s_d2"
+                    />
+
+            </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitHeigth">
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="速度"
+                android:textSize="30dp"
+                android:gravity="end|center"
+                android:id="@+id/textView20" />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textColor="@color/colorAccent"
+                android:gravity="bottom|center"
+                android:textSize="25dp"
+                android:id="@+id/editText_dis"/>
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText_dis1"
+                android:text="5"
+                android:hint="0~10"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:gravity="bottom|center"
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitHeigth">
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            custom:autoScaleTyspe="fitHeigth">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="线角度"
+                android:gravity="end|center"
+                android:textSize="30dp"/>
+
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textColor="@color/colorAccent"
+                android:gravity="bottom|center"
+                android:textSize="25dp"
+                android:id="@+id/safe_dis_now"
+                />
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/safe_dis_set"
+                android:text="30"
+                android:hint="0~90"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:gravity="bottom|center"/>
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        custom:autoScaleEnable="true"
+        custom:autoScaleType="fitHeigth">
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="right|center"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:text="获取当前参数"
+                android:textSize="25dp"
+                android:id="@+id/button_obtain"
+
+                />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            custom:autoScaleEnable="true"
+            custom:autoScaleType="fitHeigth"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="确定"
+                android:textSize="30dp"
+                android:id="@+id/button_sure" />
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+        <me.dreamheart.autoscalinglayout.ASLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+        </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+    <me.dreamheart.autoscalinglayout.ASLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+    </me.dreamheart.autoscalinglayout.ASLinearLayout>
+
+
+</me.dreamheart.autoscalinglayout.ASLinearLayout>
